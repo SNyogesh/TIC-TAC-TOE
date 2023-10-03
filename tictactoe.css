@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+   
+}
+:root{
+    --blue:#77c7ef ;
+    --white:#fff;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 30px;
+    width: 350px;
+    height: 350px;
+    /* border: 2px solid black; */
+}
+.game-container > h1{
+    background-color: var(--white);
+    color: #44a9db;
+    padding: 10px 75px;
+    margin-bottom: 7px;
+    border-radius: 7px;
+}
+.game-container > .content{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    width: 300px;
+    height: 300px;
+    gap: 7px;
+    border-radius: 7px;
+    margin-right: 8px;
+}
+.game-container > .content > .cell{
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border: none;
+    border-radius: 5px;
+    margin: 7px;
+    text-align:center;
+    position: relative;
+    cursor: pointer;
+}
+.game-container > .content > .cell > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-56%);
+    font-size: 3.7rem;
+    font-weight: 500;
+    color: #01aaff;   
+}
+.game-container > h2{
+    margin-top: 10px;
+    font-weight: 800;
+}
+.game-container > .btn{
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    padding: 5px 8px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+}
